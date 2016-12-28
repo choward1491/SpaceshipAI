@@ -51,14 +51,15 @@ namespace ship {
         void operator()( num_type & time, ModelState & dqdt );
         
     protected:
-        
         thruster_::configuration tconfig;
-        virtual void doAIComputations();
-        virtual bool doFireBullet() const;
         
     private:
         EquationsOfMotion eom;
         ship::massprops mprops;
+        
+        // internal methods
+        virtual void doAIComputations();
+        virtual bool doFireBullet() const;
         
         // helper methods
         void addThrusters( thruster_::configuration & tc );
