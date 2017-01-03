@@ -46,6 +46,7 @@ public:
     
     virtual void getForce( double time, vec3 & outForce );
     virtual void getLocation( double time, vec3 & locBody );
+    virtual void getBodyMoment( double time, vec3 & outMomentBody );
     
 private:
     vec3 dir, loc;

@@ -56,6 +56,7 @@ namespace ship {
     private:
         EquationsOfMotion eom;
         ship::massprops mprops;
+        quat attitude;
         
         // internal methods
         virtual void doAIComputations();

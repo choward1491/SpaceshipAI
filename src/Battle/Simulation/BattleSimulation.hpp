@@ -33,15 +33,26 @@
 #include "uniform_sim.hpp"
 #include "runge_kutta4.hpp"
 #include "ship_base.hpp"
+#include "time_step.hpp"
+#include "Timer.hpp"
 
 namespace battle {
     
     class simulation : public sim::uniform<double, integrate::rk4> {
     public:
         simulation();
+        ~simulation();
         
     private:
         std::vector<ship::base*> players;
+        time_step<double> t_step;
+        Timer timer;
+        
+        bool isMonteCarloDone();
+        void linkModelsToSim();         // method to link models to sim
+        bool finishedSimulation();      // method to return whether the sim has finished
+        void finalizeMonteCarloRun();   // method to finalize a monte carlo run
+        void finalize();
     };
     
     

@@ -40,6 +40,11 @@ void thruster::getForce( double time, vec3 & outForce ) {
 void thruster::getLocation( double time, vec3 & locBody ) {
     locBody = loc;
 }
+void thruster::getBodyMoment( double time, vec3 & outMomentBody ) {
+    vec3 loc, force = dir*T;
+    getLocation(time, loc);
+    outMomentBody = loc.cross(force);
+}
 
 
 //vec3 dir, loc;

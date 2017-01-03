@@ -7,9 +7,12 @@
 //
 
 #include "ship_base.hpp"
+#include "BattleSimulation.hpp"
 
 int main(int argc, const char * argv[]) {
-    ship::base bship;
+    
+    battle::simulation bsim;
+    bsim.run();
     
     return 0;
 }
