@@ -1,11 +1,11 @@
 //
-//  ship_base.hpp
+//  ship_spektr.hpp
 //  SpaceshipBattleAI
 //
-//  Created by Christian J Howard on 12/28/16.
+//  Created by Christian J Howard on 1/3/17.
 //
 //  The MIT License (MIT)
-//    Copyright © 2016 Christian Howard. All rights reserved.
+//    Copyright © 2017 Christian Howard. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -27,47 +27,28 @@
 //
 //
 
-#ifndef ship_base_hpp
-#define ship_base_hpp
+#ifndef ship_spektr_hpp
+#define ship_spektr_hpp
 
-#include "dynamic_model.hpp"
-#include "EquationsOfMotion.hpp"
-#include "thruster_configuration.hpp"
-#include "ship_massprops.hpp"
+#include "ship_base.hpp"
 
 namespace ship {
-    using num_type = double;
     
-    class base : dynamic::model<num_type> {
+    class spektr : public base {
     public:
-        
-        base();
-        ~base();
-        std::string name() const;
-        void init();
-        void update();
-        int  numDims() const;
-        void setupPrintData( Printer & p );
-        void operator()( num_type & time, ModelState & dqdt );
-        
-    protected:
-        thruster_::configuration tconfig;
-        EquationsOfMotion eom;
+        spektr();
+        ~spektr();
+        void setDesiredState( double* state );
+        void setControlNetwork( /*Neural Network*/ );
         
     private:
-        
-        ship::massprops mprops;
-        quat attitude;
-        
-        // internal methods
+        double *ref_state;
+        std::vector<double> max_thrusts;
+        bool shouldFireBullet;
         virtual void doAIComputations();
         virtual bool doFireBullet() const;
-        
-        // helper methods
-        void addThrusters( thruster_::configuration & tc );
     };
+    
 }
 
-
-
-#endif /* ship_base_hpp */
+#endif /* ship_spektr_hpp */

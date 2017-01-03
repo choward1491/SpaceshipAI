@@ -1,23 +1,26 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F13DEDDBD571BCB663677056D148FD1018C16F0",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "4243EAF92C599029FE186FBAD741554A7AD5453D" : 9223372036854775807,
+    "8F13DEDDBD571BCB663677056D148FD1018C16F0" : 9223372036854775807,
     "C70CFB262A5A037C64F5E2282601A1F459448C3B" : 9223372036854775807,
-    "C194DC02321228A9755D3EBC9062EC4E57397805" : 9223372036854775807,
     "1CC74749AA400057B98BAC82757A89DA9C5E8A2F" : 9223372036854775807,
+    "C194DC02321228A9755D3EBC9062EC4E57397805" : 9223372036854775807,
+    "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : 9223372036854775807,
     "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45" : 9223372036854775807,
-    "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : 9223372036854775807
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40BBEF6E-F2D1-4692-A0AB-1953DEAC46E2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "4243EAF92C599029FE186FBAD741554A7AD5453D" : "Bones\/",
+    "8F13DEDDBD571BCB663677056D148FD1018C16F0" : "SpaceshipAI\/",
     "C70CFB262A5A037C64F5E2282601A1F459448C3B" : "ConfigReader\/",
-    "C194DC02321228A9755D3EBC9062EC4E57397805" : "RigidBodyEOM\/",
     "1CC74749AA400057B98BAC82757A89DA9C5E8A2F" : "Geom3\/",
+    "C194DC02321228A9755D3EBC9062EC4E57397805" : "RigidBodyEOM\/",
+    "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : "KrystalBall\/",
     "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45" : "Numbers\/",
-    "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : "KrystalBall\/"
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : "Bones\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SpaceshipBattleAI",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -42,6 +45,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/KrystalBall.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "849198FAB5B8611CF0F678CD57D6C4B4FA484B94"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/SpaceshipAI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F13DEDDBD571BCB663677056D148FD1018C16F0"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/RigidBodyEOM.git",

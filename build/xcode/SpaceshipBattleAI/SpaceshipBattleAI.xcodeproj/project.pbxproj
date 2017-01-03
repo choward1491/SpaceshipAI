@@ -42,6 +42,8 @@
 		AD03D25E1E145A6B00916C6F /* ship_massprops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D25C1E145A6B00916C6F /* ship_massprops.cpp */; };
 		AD03D26C1E145D5900916C6F /* fraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2671E145D5900916C6F /* fraction.cpp */; };
 		AD03D26D1E145D5900916C6F /* prng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D26A1E145D5900916C6F /* prng.cpp */; };
+		AD03D2721E1B846800916C6F /* RL_ControllerSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2701E1B846800916C6F /* RL_ControllerSim.cpp */; };
+		AD03D2761E1B85AB00916C6F /* ship_spektr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2741E1B85AB00916C6F /* ship_spektr.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -144,6 +146,10 @@
 		AD03D2681E145D5900916C6F /* fraction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fraction.hpp; sourceTree = "<group>"; };
 		AD03D26A1E145D5900916C6F /* prng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prng.cpp; sourceTree = "<group>"; };
 		AD03D26B1E145D5900916C6F /* prng.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = prng.hpp; sourceTree = "<group>"; };
+		AD03D2701E1B846800916C6F /* RL_ControllerSim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RL_ControllerSim.cpp; path = ../../../../src/Battle/Training/Controller/RL_ControllerSim.cpp; sourceTree = "<group>"; };
+		AD03D2711E1B846800916C6F /* RL_ControllerSim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RL_ControllerSim.hpp; path = ../../../../src/Battle/Training/Controller/RL_ControllerSim.hpp; sourceTree = "<group>"; };
+		AD03D2741E1B85AB00916C6F /* ship_spektr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ship_spektr.cpp; path = ../../../../src/Ship/Christians_Ship/ship_spektr.cpp; sourceTree = "<group>"; };
+		AD03D2751E1B85AB00916C6F /* ship_spektr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ship_spektr.hpp; path = ../../../../src/Ship/Christians_Ship/ship_spektr.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,6 +411,8 @@
 		AD03D2421E1449D100916C6F /* Battle */ = {
 			isa = PBXGroup;
 			children = (
+				AD03D2731E1B856000916C6F /* Christian's Ship */,
+				AD03D26E1E1B83F300916C6F /* Training */,
 				AD03D2471E144ABF00916C6F /* Simulator */,
 				AD03D2461E144A1B00916C6F /* Map */,
 				AD03D2451E144A0D00916C6F /* Score system */,
@@ -539,6 +547,32 @@
 			path = ../../../../../Numbers/src/prng;
 			sourceTree = "<group>";
 		};
+		AD03D26E1E1B83F300916C6F /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D26F1E1B841600916C6F /* LearnController */,
+			);
+			name = Training;
+			sourceTree = "<group>";
+		};
+		AD03D26F1E1B841600916C6F /* LearnController */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2701E1B846800916C6F /* RL_ControllerSim.cpp */,
+				AD03D2711E1B846800916C6F /* RL_ControllerSim.hpp */,
+			);
+			name = LearnController;
+			sourceTree = "<group>";
+		};
+		AD03D2731E1B856000916C6F /* Christian's Ship */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2741E1B85AB00916C6F /* ship_spektr.cpp */,
+				AD03D2751E1B85AB00916C6F /* ship_spektr.hpp */,
+			);
+			name = "Christian's Ship";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -622,6 +656,7 @@
 				AD03D2551E144C2900916C6F /* BattleSimulation.cpp in Sources */,
 				AD03D21C1E143D4500916C6F /* runge_kutta4.cpp in Sources */,
 				AD03D2141E143D4500916C6F /* pendulum_model.cpp in Sources */,
+				AD03D2761E1B85AB00916C6F /* ship_spektr.cpp in Sources */,
 				AD03D24A1E144B0800916C6F /* ship_base.cpp in Sources */,
 				AD03D2331E143D6B00916C6F /* EquationsOfMotionImpl.cpp in Sources */,
 				AD03D2181E143D4500916C6F /* butcher_table.cpp in Sources */,
@@ -632,6 +667,7 @@
 				AD03D21F1E143D4500916C6F /* model_state.cpp in Sources */,
 				AD03D2341E143D6B00916C6F /* ForceContributor.cpp in Sources */,
 				AD03D25E1E145A6B00916C6F /* ship_massprops.cpp in Sources */,
+				AD03D2721E1B846800916C6F /* RL_ControllerSim.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,7 @@ public:
     void setThrusterLocation( const vec3 & loc );
     void setThrust( const double & thrust );
     void setMaxThrust( const double & thrust );
+    double getMaxThrust() const;
     
     virtual void getForce( double time, vec3 & outForce );
     virtual void getLocation( double time, vec3 & locBody );

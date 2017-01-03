@@ -1,11 +1,11 @@
 //
-//  ship_base.hpp
+//  RL_ControllerSim.hpp
 //  SpaceshipBattleAI
 //
-//  Created by Christian J Howard on 12/28/16.
+//  Created by Christian J Howard on 1/3/17.
 //
 //  The MIT License (MIT)
-//    Copyright © 2016 Christian Howard. All rights reserved.
+//    Copyright © 2017 Christian Howard. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -27,47 +27,33 @@
 //
 //
 
-#ifndef ship_base_hpp
-#define ship_base_hpp
+#ifndef RL_ControllerSim_hpp
+#define RL_ControllerSim_hpp
 
-#include "dynamic_model.hpp"
-#include "EquationsOfMotion.hpp"
-#include "thruster_configuration.hpp"
-#include "ship_massprops.hpp"
+#include "uniform_sim.hpp"
+#include "runge_kutta4.hpp"
+#include "time_step.hpp"
+#include "Timer.hpp"
 
-namespace ship {
-    using num_type = double;
+namespace rl_training {
     
-    class base : dynamic::model<num_type> {
+    class controller : public sim::uniform<double, integrate::rk4> {
     public:
-        
-        base();
-        ~base();
-        std::string name() const;
-        void init();
-        void update();
-        int  numDims() const;
-        void setupPrintData( Printer & p );
-        void operator()( num_type & time, ModelState & dqdt );
-        
-    protected:
-        thruster_::configuration tconfig;
-        EquationsOfMotion eom;
+        controller();
+        ~controller();
         
     private:
+        time_step<double> t_step;
+        Timer timer;
         
-        ship::massprops mprops;
-        quat attitude;
-        
-        // internal methods
-        virtual void doAIComputations();
-        virtual bool doFireBullet() const;
-        
-        // helper methods
-        void addThrusters( thruster_::configuration & tc );
+        bool isMonteCarloDone();
+        void linkModelsToSim();         // method to link models to sim
+        bool finishedSimulation();      // method to return whether the sim has finished
+        void finalizeMonteCarloRun();   // method to finalize a monte carlo run
+        void finalize();
     };
+    
+    
 }
 
-
-
-#endif /* ship_base_hpp */
+#endif /* RL_ControllerSim_hpp */
