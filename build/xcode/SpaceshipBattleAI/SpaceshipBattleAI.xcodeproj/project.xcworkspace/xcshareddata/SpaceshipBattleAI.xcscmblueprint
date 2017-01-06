@@ -8,9 +8,12 @@
     "C70CFB262A5A037C64F5E2282601A1F459448C3B" : 9223372036854775807,
     "1CC74749AA400057B98BAC82757A89DA9C5E8A2F" : 9223372036854775807,
     "C194DC02321228A9755D3EBC9062EC4E57397805" : 9223372036854775807,
+    "66BB0BBEEA9737A50941FFDE789A1435969F90D7" : 9223372036854775807,
     "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : 9223372036854775807,
     "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45" : 9223372036854775807,
-    "4243EAF92C599029FE186FBAD741554A7AD5453D" : 9223372036854775807
+    "6323229C0BE8C0DEC757961F7B5B25A13477E628" : 9223372036854775807,
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : 9223372036854775807,
+    "2FEC591E023291C8810E9071A4DF87CA8CA4B90B" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40BBEF6E-F2D1-4692-A0AB-1953DEAC46E2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
@@ -18,9 +21,12 @@
     "C70CFB262A5A037C64F5E2282601A1F459448C3B" : "ConfigReader\/",
     "1CC74749AA400057B98BAC82757A89DA9C5E8A2F" : "Geom3\/",
     "C194DC02321228A9755D3EBC9062EC4E57397805" : "RigidBodyEOM\/",
+    "66BB0BBEEA9737A50941FFDE789A1435969F90D7" : "Trench\/",
     "849198FAB5B8611CF0F678CD57D6C4B4FA484B94" : "KrystalBall\/",
     "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45" : "Numbers\/",
-    "4243EAF92C599029FE186FBAD741554A7AD5453D" : "Bones\/"
+    "6323229C0BE8C0DEC757961F7B5B25A13477E628" : "Fuse\/",
+    "4243EAF92C599029FE186FBAD741554A7AD5453D" : "Bones\/",
+    "2FEC591E023291C8810E9071A4DF87CA8CA4B90B" : "MetaLA\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SpaceshipBattleAI",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -37,9 +43,24 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1FC39AAC173625F0FE4B9411A1560DAF6A5C0F45"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/MetaLA.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FEC591E023291C8810E9071A4DF87CA8CA4B90B"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/Data_Structures.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4243EAF92C599029FE186FBAD741554A7AD5453D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/FuseML.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6323229C0BE8C0DEC757961F7B5B25A13477E628"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/Trench.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "66BB0BBEEA9737A50941FFDE789A1435969F90D7"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/choward1491\/KrystalBall.git",

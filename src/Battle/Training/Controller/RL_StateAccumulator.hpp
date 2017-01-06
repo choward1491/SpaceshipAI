@@ -1,8 +1,8 @@
 //
-//  ship_spektr.hpp
+//  RL_StateAccumulator.hpp
 //  SpaceshipBattleAI
 //
-//  Created by Christian J Howard on 1/3/17.
+//  Created by Christian J Howard on 1/4/17.
 //
 //  The MIT License (MIT)
 //    Copyright © 2017 Christian Howard. All rights reserved.
@@ -27,47 +27,33 @@
 //
 //
 
-#ifndef ship_spektr_hpp
-#define ship_spektr_hpp
+#ifndef RL_StateAccumulator_hpp
+#define RL_StateAccumulator_hpp
 
-#include "ship_base.hpp"
-#include "RandomInit.hpp"
-#include "PSO.hpp"
-#include "get_control.hpp"
+#include <vector>
+#include "discrete_model.hpp"
+#include "ship_spektr.hpp"
 
-class NeuralNet;
-
-namespace ship {
-    
-    class spektr : public base {
+namespace rl_training {
+    class state_accumulator : public discrete::model<double> {
     public:
-        spektr();
-        ~spektr();
-        void setDesiredState( double* state );
-        void setControlNetwork( NeuralNet & control_net );
-        const std::vector<double> & getControlVec() const;
-        const std::vector<double> & getStateVec() const;
+        state_accumulator() = default;
+        ~state_accumulator() = default;
+        void setTrainingShip( ship::spektr * s );
+        
+        virtual std::string name() const;
+        virtual void init();
+        virtual void update();
+        
+        std::vector<double> & stateAt(int idx);
+        std::vector<double> & actionAt(int idx);
         
     private:
-        PRNG prng;
-        NeuralNet * cnet;
-        double *ref_state, c_eps;
-        std::vector<double> max_thrusts;
-        std::vector<double> nn_in_state, nn_out_state, nn_grad;
-        std::vector<double> s_vec, control;
-        
-        bool shouldFireBullet;
-        
-        virtual void doAIComputations();
-        virtual bool doFireBullet() const;
-        
-        // reinforcement learning helper codes
-        opt::pso<ship::get_control, opt::RandomInit> pso;
-        double computeControlReward();
-        void initControlNetworkWeights();
-        void getControl();
+        int index;
+        ship::spektr* ship_;
+        std::vector< std::vector<double> > state_history;
+        std::vector< std::vector<double> > action_history;
     };
-    
 }
 
-#endif /* ship_spektr_hpp */
+#endif /* RL_StateAccumulator_hpp */

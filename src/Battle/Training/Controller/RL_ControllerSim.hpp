@@ -30,10 +30,12 @@
 #ifndef RL_ControllerSim_hpp
 #define RL_ControllerSim_hpp
 
+#include "ship_spektr.hpp"
 #include "uniform_sim.hpp"
 #include "runge_kutta4.hpp"
 #include "time_step.hpp"
 #include "Timer.hpp"
+#include "NeuralNet.hpp"
 
 namespace rl_training {
     
@@ -43,8 +45,11 @@ namespace rl_training {
         ~controller();
         
     private:
+        ship::spektr ship_;
         time_step<double> t_step;
         Timer timer;
+        NeuralNet net;
+        std::vector<double> des_state;
         
         bool isMonteCarloDone();
         void linkModelsToSim();         // method to link models to sim
@@ -52,7 +57,6 @@ namespace rl_training {
         void finalizeMonteCarloRun();   // method to finalize a monte carlo run
         void finalize();
     };
-    
     
 }
 

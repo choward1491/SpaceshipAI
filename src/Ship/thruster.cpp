@@ -38,6 +38,10 @@ double thruster::getMaxThrust() const {
     return Tmax;
 }
 
+double thruster::getThrust() const {
+    return T;
+}
+
 void thruster::getForce( double time, vec3 & outForce ) {
     outForce = ref_body->getAttitude().rotate(dir*T);
 }

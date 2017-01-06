@@ -38,7 +38,7 @@
 namespace ship {
     using num_type = double;
     
-    class base : dynamic::model<num_type> {
+    class base : public dynamic::model<num_type> {
     public:
         
         base();

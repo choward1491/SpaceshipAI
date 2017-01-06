@@ -1,8 +1,8 @@
 //
-//  ship_spektr.hpp
+//  get_control.hpp
 //  SpaceshipBattleAI
 //
-//  Created by Christian J Howard on 1/3/17.
+//  Created by Christian J Howard on 1/4/17.
 //
 //  The MIT License (MIT)
 //    Copyright © 2017 Christian Howard. All rights reserved.
@@ -27,47 +27,27 @@
 //
 //
 
-#ifndef ship_spektr_hpp
-#define ship_spektr_hpp
+#ifndef get_control_hpp
+#define get_control_hpp
 
-#include "ship_base.hpp"
-#include "RandomInit.hpp"
-#include "PSO.hpp"
-#include "get_control.hpp"
+#include <vector>
+#include "Particle.hpp"
 
 class NeuralNet;
-
 namespace ship {
     
-    class spektr : public base {
+    class get_control {
     public:
-        spektr();
-        ~spektr();
-        void setDesiredState( double* state );
-        void setControlNetwork( NeuralNet & control_net );
-        const std::vector<double> & getControlVec() const;
-        const std::vector<double> & getStateVec() const;
+        get_control() = default;
+        void setNetwork( NeuralNet & net );
+        void setInitInput( std::vector<double> & in_ );
+        double operator()( opt::Mat & m );
         
     private:
-        PRNG prng;
-        NeuralNet * cnet;
-        double *ref_state, c_eps;
-        std::vector<double> max_thrusts;
-        std::vector<double> nn_in_state, nn_out_state, nn_grad;
-        std::vector<double> s_vec, control;
-        
-        bool shouldFireBullet;
-        
-        virtual void doAIComputations();
-        virtual bool doFireBullet() const;
-        
-        // reinforcement learning helper codes
-        opt::pso<ship::get_control, opt::RandomInit> pso;
-        double computeControlReward();
-        void initControlNetworkWeights();
-        void getControl();
+        NeuralNet* cnet;
+        std::vector<double> in, out;
     };
     
 }
 
-#endif /* ship_spektr_hpp */
+#endif /* get_control_hpp */

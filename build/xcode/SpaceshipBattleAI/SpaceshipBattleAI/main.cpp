@@ -8,11 +8,12 @@
 
 #include "ship_base.hpp"
 #include "BattleSimulation.hpp"
+#include "RL_ControllerSim.hpp"
 
 int main(int argc, const char * argv[]) {
     
-    battle::simulation bsim;
-    bsim.run();
+    rl_training::controller csim;
+    csim.run();
     
     return 0;
 }

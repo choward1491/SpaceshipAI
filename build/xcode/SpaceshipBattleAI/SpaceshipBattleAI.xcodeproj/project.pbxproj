@@ -44,6 +44,18 @@
 		AD03D26D1E145D5900916C6F /* prng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D26A1E145D5900916C6F /* prng.cpp */; };
 		AD03D2721E1B846800916C6F /* RL_ControllerSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2701E1B846800916C6F /* RL_ControllerSim.cpp */; };
 		AD03D2761E1B85AB00916C6F /* ship_spektr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2741E1B85AB00916C6F /* ship_spektr.cpp */; };
+		AD03D2861E1D6FE400916C6F /* NetFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D27A1E1D6FE400916C6F /* NetFunc.cpp */; };
+		AD03D2871E1D6FE400916C6F /* NetFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D27C1E1D6FE400916C6F /* NetFunctions.cpp */; };
+		AD03D2881E1D6FE400916C6F /* NetLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D27E1E1D6FE400916C6F /* NetLayer.cpp */; };
+		AD03D2891E1D6FE400916C6F /* NetMat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2801E1D6FE400916C6F /* NetMat.cpp */; };
+		AD03D28A1E1D6FE400916C6F /* NeuralNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2821E1D6FE400916C6F /* NeuralNet.cpp */; };
+		AD03D28B1E1D6FE400916C6F /* NeuralPrototypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2841E1D6FE400916C6F /* NeuralPrototypes.cpp */; };
+		AD03D2A91E1D804D00916C6F /* GSA_Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D28F1E1D804D00916C6F /* GSA_Particle.cpp */; };
+		AD03D2AA1E1D804D00916C6F /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2921E1D804D00916C6F /* Particle.cpp */; };
+		AD03D2AB1E1D804D00916C6F /* RandomInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D29F1E1D804D00916C6F /* RandomInit.cpp */; };
+		AD03D2B21E1D819200916C6F /* get_control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2B01E1D819200916C6F /* get_control.cpp */; };
+		AD03D2E41E1D824600916C6F /* MatHashes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD03D2C51E1D824600916C6F /* MatHashes.cpp */; };
+		AD36B61E1E1DBB890030A0CF /* RL_StateAccumulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD36B61C1E1DBB890030A0CF /* RL_StateAccumulator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +162,86 @@
 		AD03D2711E1B846800916C6F /* RL_ControllerSim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RL_ControllerSim.hpp; path = ../../../../src/Battle/Training/Controller/RL_ControllerSim.hpp; sourceTree = "<group>"; };
 		AD03D2741E1B85AB00916C6F /* ship_spektr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ship_spektr.cpp; path = ../../../../src/Ship/Christians_Ship/ship_spektr.cpp; sourceTree = "<group>"; };
 		AD03D2751E1B85AB00916C6F /* ship_spektr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ship_spektr.hpp; path = ../../../../src/Ship/Christians_Ship/ship_spektr.hpp; sourceTree = "<group>"; };
+		AD03D2791E1D6FE400916C6F /* Activation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Activation.hpp; sourceTree = "<group>"; };
+		AD03D27A1E1D6FE400916C6F /* NetFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetFunc.cpp; sourceTree = "<group>"; };
+		AD03D27B1E1D6FE400916C6F /* NetFunc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NetFunc.hpp; sourceTree = "<group>"; };
+		AD03D27C1E1D6FE400916C6F /* NetFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetFunctions.cpp; sourceTree = "<group>"; };
+		AD03D27D1E1D6FE400916C6F /* NetFunctions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NetFunctions.hpp; sourceTree = "<group>"; };
+		AD03D27E1E1D6FE400916C6F /* NetLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetLayer.cpp; sourceTree = "<group>"; };
+		AD03D27F1E1D6FE400916C6F /* NetLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NetLayer.hpp; sourceTree = "<group>"; };
+		AD03D2801E1D6FE400916C6F /* NetMat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetMat.cpp; sourceTree = "<group>"; };
+		AD03D2811E1D6FE400916C6F /* NetMat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NetMat.hpp; sourceTree = "<group>"; };
+		AD03D2821E1D6FE400916C6F /* NeuralNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNet.cpp; sourceTree = "<group>"; };
+		AD03D2831E1D6FE400916C6F /* NeuralNet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NeuralNet.hpp; sourceTree = "<group>"; };
+		AD03D2841E1D6FE400916C6F /* NeuralPrototypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralPrototypes.cpp; sourceTree = "<group>"; };
+		AD03D2851E1D6FE400916C6F /* NeuralPrototypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NeuralPrototypes.hpp; sourceTree = "<group>"; };
+		AD03D28F1E1D804D00916C6F /* GSA_Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GSA_Particle.cpp; sourceTree = "<group>"; };
+		AD03D2901E1D804D00916C6F /* GSA_Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GSA_Particle.hpp; sourceTree = "<group>"; };
+		AD03D2921E1D804D00916C6F /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		AD03D2931E1D804D00916C6F /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		AD03D2941E1D804D00916C6F /* PSO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PSO.hpp; sourceTree = "<group>"; };
+		AD03D2951E1D804D00916C6F /* Swarm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Swarm.hpp; sourceTree = "<group>"; };
+		AD03D2971E1D804D00916C6F /* GradientBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GradientBase.hpp; sourceTree = "<group>"; };
+		AD03D2981E1D804D00916C6F /* MultiStartGradientBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MultiStartGradientBase.hpp; sourceTree = "<group>"; };
+		AD03D29A1E1D804D00916C6F /* ConstantStep.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConstantStep.hpp; sourceTree = "<group>"; };
+		AD03D29B1E1D804D00916C6F /* HessianFreeStep.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HessianFreeStep.hpp; sourceTree = "<group>"; };
+		AD03D29C1E1D804D00916C6F /* iRPROPp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = iRPROPp.hpp; sourceTree = "<group>"; };
+		AD03D29D1E1D804D00916C6F /* NesterovStep.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NesterovStep.hpp; sourceTree = "<group>"; };
+		AD03D29F1E1D804D00916C6F /* RandomInit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomInit.cpp; sourceTree = "<group>"; };
+		AD03D2A01E1D804D00916C6F /* RandomInit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RandomInit.hpp; sourceTree = "<group>"; };
+		AD03D2A21E1D804D00916C6F /* Optimizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Optimizer.hpp; sourceTree = "<group>"; };
+		AD03D2A41E1D804D00916C6F /* Easom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Easom.hpp; sourceTree = "<group>"; };
+		AD03D2A51E1D804D00916C6F /* McCormick.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = McCormick.hpp; sourceTree = "<group>"; };
+		AD03D2A61E1D804D00916C6F /* Parabola2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parabola2D.hpp; sourceTree = "<group>"; };
+		AD03D2A71E1D804D00916C6F /* Rosenbrock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rosenbrock.hpp; sourceTree = "<group>"; };
+		AD03D2A81E1D804D00916C6F /* ThreeHumpCamel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ThreeHumpCamel.hpp; sourceTree = "<group>"; };
+		AD03D2B01E1D819200916C6F /* get_control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = get_control.cpp; path = ../../../../src/Ship/Christians_Ship/get_control.cpp; sourceTree = "<group>"; };
+		AD03D2B11E1D819200916C6F /* get_control.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = get_control.hpp; path = ../../../../src/Ship/Christians_Ship/get_control.hpp; sourceTree = "<group>"; };
+		AD03D2B51E1D824600916C6F /* Cholesky.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cholesky.hpp; sourceTree = "<group>"; };
+		AD03D2B61E1D824600916C6F /* LDL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LDL.hpp; sourceTree = "<group>"; };
+		AD03D2B71E1D824600916C6F /* QR.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QR.hpp; sourceTree = "<group>"; };
+		AD03D2B81E1D824600916C6F /* LinearAlgebra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinearAlgebra.h; path = ../../../../../MetaLA/src/LinearAlgebra.h; sourceTree = "<group>"; };
+		AD03D2BA1E1D824600916C6F /* AllMatExprs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AllMatExprs.hpp; sourceTree = "<group>"; };
+		AD03D2BB1E1D824600916C6F /* MatMinusExpr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatMinusExpr.hpp; sourceTree = "<group>"; };
+		AD03D2BC1E1D824600916C6F /* MatMultExpr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatMultExpr.hpp; sourceTree = "<group>"; };
+		AD03D2BD1E1D824600916C6F /* MatrixExpression.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatrixExpression.hpp; sourceTree = "<group>"; };
+		AD03D2BE1E1D824600916C6F /* MatScalarAddExpr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatScalarAddExpr.hpp; sourceTree = "<group>"; };
+		AD03D2BF1E1D824600916C6F /* MatScalarDivExpr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatScalarDivExpr.hpp; sourceTree = "<group>"; };
+		AD03D2C01E1D824600916C6F /* MatScalarMinusExpr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatScalarMinusExpr.hpp; sourceTree = "<group>"; };
+		AD03D2C11E1D824600916C6F /* MatScalarMultExpr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatScalarMultExpr.hpp; sourceTree = "<group>"; };
+		AD03D2C21E1D824600916C6F /* MatSumExpr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatSumExpr.hpp; sourceTree = "<group>"; };
+		AD03D2C31E1D824600916C6F /* ScalarTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScalarTypes.hpp; sourceTree = "<group>"; };
+		AD03D2C51E1D824600916C6F /* MatHashes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatHashes.cpp; sourceTree = "<group>"; };
+		AD03D2C61E1D824600916C6F /* MatHashes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatHashes.hpp; sourceTree = "<group>"; };
+		AD03D2C81E1D824600916C6F /* Dims.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dims.hpp; sourceTree = "<group>"; };
+		AD03D2C91E1D824600916C6F /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		AD03D2CA1E1D824600916C6F /* MatTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatTypes.hpp; sourceTree = "<group>"; };
+		AD03D2CC1E1D824600916C6F /* Special_Diag.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_Diag.hpp; sourceTree = "<group>"; };
+		AD03D2CD1E1D824600916C6F /* Special_FastMat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_FastMat.hpp; sourceTree = "<group>"; };
+		AD03D2CE1E1D824600916C6F /* Special_General.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_General.hpp; sourceTree = "<group>"; };
+		AD03D2CF1E1D824600916C6F /* Special_Lower.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_Lower.hpp; sourceTree = "<group>"; };
+		AD03D2D01E1D824600916C6F /* Special_Sparse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_Sparse.hpp; sourceTree = "<group>"; };
+		AD03D2D11E1D824600916C6F /* Special_Symmetric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_Symmetric.hpp; sourceTree = "<group>"; };
+		AD03D2D21E1D824600916C6F /* Special_Tridiag.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_Tridiag.hpp; sourceTree = "<group>"; };
+		AD03D2D31E1D824600916C6F /* Special_Upper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Special_Upper.hpp; sourceTree = "<group>"; };
+		AD03D2D51E1D824600916C6F /* ComplexFastStorage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComplexFastStorage.hpp; sourceTree = "<group>"; };
+		AD03D2D61E1D824600916C6F /* ComplexMatStorage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComplexMatStorage.hpp; sourceTree = "<group>"; };
+		AD03D2D71E1D824600916C6F /* FastStorage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FastStorage.hpp; sourceTree = "<group>"; };
+		AD03D2D81E1D824600916C6F /* FastStorage_Impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FastStorage_Impl.hpp; sourceTree = "<group>"; };
+		AD03D2D91E1D824600916C6F /* MatStorage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatStorage.hpp; sourceTree = "<group>"; };
+		AD03D2DA1E1D824600916C6F /* MatStorage_Impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatStorage_Impl.hpp; sourceTree = "<group>"; };
+		AD03D2DB1E1D824600916C6F /* MatStorage_Sparse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MatStorage_Sparse.hpp; sourceTree = "<group>"; };
+		AD03D2DD1E1D824600916C6F /* ConjGrad.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConjGrad.hpp; sourceTree = "<group>"; };
+		AD03D2DE1E1D824600916C6F /* DiagonalSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DiagonalSolver.hpp; sourceTree = "<group>"; };
+		AD03D2DF1E1D824600916C6F /* LowerSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LowerSolver.hpp; sourceTree = "<group>"; };
+		AD03D2E01E1D824600916C6F /* Solver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Solver.hpp; sourceTree = "<group>"; };
+		AD03D2E11E1D824600916C6F /* SymmetricSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SymmetricSolver.hpp; sourceTree = "<group>"; };
+		AD03D2E21E1D824600916C6F /* TriDiagSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TriDiagSolver.hpp; sourceTree = "<group>"; };
+		AD03D2E31E1D824600916C6F /* UpperSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UpperSolver.hpp; sourceTree = "<group>"; };
+		AD36B61A1E1DA8C30030A0CF /* complex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = complex.hpp; sourceTree = "<group>"; };
+		AD36B61B1E1DA8C30030A0CF /* complex_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = complex_impl.hpp; sourceTree = "<group>"; };
+		AD36B61C1E1DBB890030A0CF /* RL_StateAccumulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RL_StateAccumulator.cpp; path = ../../../../src/Battle/Training/Controller/RL_StateAccumulator.cpp; sourceTree = "<group>"; };
+		AD36B61D1E1DBB890030A0CF /* RL_StateAccumulator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RL_StateAccumulator.hpp; path = ../../../../src/Battle/Training/Controller/RL_StateAccumulator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +284,9 @@
 		AD03D1CE1E143CEF00916C6F /* dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				AD03D2B31E1D822300916C6F /* Mat */,
+				AD03D28C1E1D800000916C6F /* Trench */,
+				AD03D2771E1D6FA600916C6F /* Fuse */,
 				AD03D2651E145D4000916C6F /* Numbers */,
 				AD03D2611E145D2600916C6F /* Bones */,
 				AD03D2361E143DC400916C6F /* parser */,
@@ -521,6 +616,7 @@
 		AD03D2651E145D4000916C6F /* Numbers */ = {
 			isa = PBXGroup;
 			children = (
+				AD36B6191E1DA8C30030A0CF /* complex */,
 				AD03D2661E145D5900916C6F /* fraction */,
 				AD03D2691E145D5900916C6F /* prng */,
 			);
@@ -560,6 +656,8 @@
 			children = (
 				AD03D2701E1B846800916C6F /* RL_ControllerSim.cpp */,
 				AD03D2711E1B846800916C6F /* RL_ControllerSim.hpp */,
+				AD36B61C1E1DBB890030A0CF /* RL_StateAccumulator.cpp */,
+				AD36B61D1E1DBB890030A0CF /* RL_StateAccumulator.hpp */,
 			);
 			name = LearnController;
 			sourceTree = "<group>";
@@ -567,10 +665,265 @@
 		AD03D2731E1B856000916C6F /* Christian's Ship */ = {
 			isa = PBXGroup;
 			children = (
+				AD03D2AC1E1D814100916C6F /* GetControl */,
 				AD03D2741E1B85AB00916C6F /* ship_spektr.cpp */,
 				AD03D2751E1B85AB00916C6F /* ship_spektr.hpp */,
 			);
 			name = "Christian's Ship";
+			sourceTree = "<group>";
+		};
+		AD03D2771E1D6FA600916C6F /* Fuse */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2781E1D6FE400916C6F /* ANN */,
+			);
+			name = Fuse;
+			sourceTree = "<group>";
+		};
+		AD03D2781E1D6FE400916C6F /* ANN */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2791E1D6FE400916C6F /* Activation.hpp */,
+				AD03D27A1E1D6FE400916C6F /* NetFunc.cpp */,
+				AD03D27B1E1D6FE400916C6F /* NetFunc.hpp */,
+				AD03D27C1E1D6FE400916C6F /* NetFunctions.cpp */,
+				AD03D27D1E1D6FE400916C6F /* NetFunctions.hpp */,
+				AD03D27E1E1D6FE400916C6F /* NetLayer.cpp */,
+				AD03D27F1E1D6FE400916C6F /* NetLayer.hpp */,
+				AD03D2801E1D6FE400916C6F /* NetMat.cpp */,
+				AD03D2811E1D6FE400916C6F /* NetMat.hpp */,
+				AD03D2821E1D6FE400916C6F /* NeuralNet.cpp */,
+				AD03D2831E1D6FE400916C6F /* NeuralNet.hpp */,
+				AD03D2841E1D6FE400916C6F /* NeuralPrototypes.cpp */,
+				AD03D2851E1D6FE400916C6F /* NeuralPrototypes.hpp */,
+			);
+			name = ANN;
+			path = ../../../../../Fuse/src/ANN;
+			sourceTree = "<group>";
+		};
+		AD03D28C1E1D800000916C6F /* Trench */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D28D1E1D804D00916C6F /* DerivativeFree */,
+				AD03D2961E1D804D00916C6F /* Gradient */,
+				AD03D29E1E1D804D00916C6F /* Initializers */,
+				AD03D2A11E1D804D00916C6F /* Optimizer */,
+				AD03D2A31E1D804D00916C6F /* TestFunctions */,
+			);
+			name = Trench;
+			sourceTree = "<group>";
+		};
+		AD03D28D1E1D804D00916C6F /* DerivativeFree */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D28E1E1D804D00916C6F /* GSA */,
+				AD03D2911E1D804D00916C6F /* PSO */,
+			);
+			name = DerivativeFree;
+			path = ../../../../../Trench/src/DerivativeFree;
+			sourceTree = "<group>";
+		};
+		AD03D28E1E1D804D00916C6F /* GSA */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D28F1E1D804D00916C6F /* GSA_Particle.cpp */,
+				AD03D2901E1D804D00916C6F /* GSA_Particle.hpp */,
+			);
+			path = GSA;
+			sourceTree = "<group>";
+		};
+		AD03D2911E1D804D00916C6F /* PSO */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2921E1D804D00916C6F /* Particle.cpp */,
+				AD03D2931E1D804D00916C6F /* Particle.hpp */,
+				AD03D2941E1D804D00916C6F /* PSO.hpp */,
+				AD03D2951E1D804D00916C6F /* Swarm.hpp */,
+			);
+			path = PSO;
+			sourceTree = "<group>";
+		};
+		AD03D2961E1D804D00916C6F /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2971E1D804D00916C6F /* GradientBase.hpp */,
+				AD03D2981E1D804D00916C6F /* MultiStartGradientBase.hpp */,
+				AD03D2991E1D804D00916C6F /* Steps */,
+			);
+			name = Gradient;
+			path = ../../../../../Trench/src/Gradient;
+			sourceTree = "<group>";
+		};
+		AD03D2991E1D804D00916C6F /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D29A1E1D804D00916C6F /* ConstantStep.hpp */,
+				AD03D29B1E1D804D00916C6F /* HessianFreeStep.hpp */,
+				AD03D29C1E1D804D00916C6F /* iRPROPp.hpp */,
+				AD03D29D1E1D804D00916C6F /* NesterovStep.hpp */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		AD03D29E1E1D804D00916C6F /* Initializers */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D29F1E1D804D00916C6F /* RandomInit.cpp */,
+				AD03D2A01E1D804D00916C6F /* RandomInit.hpp */,
+			);
+			name = Initializers;
+			path = ../../../../../Trench/src/Initializers;
+			sourceTree = "<group>";
+		};
+		AD03D2A11E1D804D00916C6F /* Optimizer */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2A21E1D804D00916C6F /* Optimizer.hpp */,
+			);
+			name = Optimizer;
+			path = ../../../../../Trench/src/Optimizer;
+			sourceTree = "<group>";
+		};
+		AD03D2A31E1D804D00916C6F /* TestFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2A41E1D804D00916C6F /* Easom.hpp */,
+				AD03D2A51E1D804D00916C6F /* McCormick.hpp */,
+				AD03D2A61E1D804D00916C6F /* Parabola2D.hpp */,
+				AD03D2A71E1D804D00916C6F /* Rosenbrock.hpp */,
+				AD03D2A81E1D804D00916C6F /* ThreeHumpCamel.hpp */,
+			);
+			name = TestFunctions;
+			path = ../../../../../Trench/src/TestFunctions;
+			sourceTree = "<group>";
+		};
+		AD03D2AC1E1D814100916C6F /* GetControl */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2B01E1D819200916C6F /* get_control.cpp */,
+				AD03D2B11E1D819200916C6F /* get_control.hpp */,
+			);
+			name = GetControl;
+			sourceTree = "<group>";
+		};
+		AD03D2B31E1D822300916C6F /* Mat */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2B41E1D824600916C6F /* Factorizations */,
+				AD03D2B81E1D824600916C6F /* LinearAlgebra.h */,
+				AD03D2B91E1D824600916C6F /* MatExpressions */,
+				AD03D2C41E1D824600916C6F /* MatHashes */,
+				AD03D2C71E1D824600916C6F /* Matrix */,
+				AD03D2D41E1D824600916C6F /* MatStorage */,
+				AD03D2DC1E1D824600916C6F /* Solvers */,
+			);
+			name = Mat;
+			sourceTree = "<group>";
+		};
+		AD03D2B41E1D824600916C6F /* Factorizations */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2B51E1D824600916C6F /* Cholesky.hpp */,
+				AD03D2B61E1D824600916C6F /* LDL.hpp */,
+				AD03D2B71E1D824600916C6F /* QR.hpp */,
+			);
+			name = Factorizations;
+			path = ../../../../../MetaLA/src/Factorizations;
+			sourceTree = "<group>";
+		};
+		AD03D2B91E1D824600916C6F /* MatExpressions */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2BA1E1D824600916C6F /* AllMatExprs.hpp */,
+				AD03D2BB1E1D824600916C6F /* MatMinusExpr.hpp */,
+				AD03D2BC1E1D824600916C6F /* MatMultExpr.hpp */,
+				AD03D2BD1E1D824600916C6F /* MatrixExpression.hpp */,
+				AD03D2BE1E1D824600916C6F /* MatScalarAddExpr.hpp */,
+				AD03D2BF1E1D824600916C6F /* MatScalarDivExpr.hpp */,
+				AD03D2C01E1D824600916C6F /* MatScalarMinusExpr.hpp */,
+				AD03D2C11E1D824600916C6F /* MatScalarMultExpr.hpp */,
+				AD03D2C21E1D824600916C6F /* MatSumExpr.hpp */,
+				AD03D2C31E1D824600916C6F /* ScalarTypes.hpp */,
+			);
+			name = MatExpressions;
+			path = ../../../../../MetaLA/src/MatExpressions;
+			sourceTree = "<group>";
+		};
+		AD03D2C41E1D824600916C6F /* MatHashes */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2C51E1D824600916C6F /* MatHashes.cpp */,
+				AD03D2C61E1D824600916C6F /* MatHashes.hpp */,
+			);
+			name = MatHashes;
+			path = ../../../../../MetaLA/src/MatHashes;
+			sourceTree = "<group>";
+		};
+		AD03D2C71E1D824600916C6F /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2C81E1D824600916C6F /* Dims.hpp */,
+				AD03D2C91E1D824600916C6F /* Matrix.hpp */,
+				AD03D2CA1E1D824600916C6F /* MatTypes.hpp */,
+				AD03D2CB1E1D824600916C6F /* Special */,
+			);
+			name = Matrix;
+			path = ../../../../../MetaLA/src/Matrix;
+			sourceTree = "<group>";
+		};
+		AD03D2CB1E1D824600916C6F /* Special */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2CC1E1D824600916C6F /* Special_Diag.hpp */,
+				AD03D2CD1E1D824600916C6F /* Special_FastMat.hpp */,
+				AD03D2CE1E1D824600916C6F /* Special_General.hpp */,
+				AD03D2CF1E1D824600916C6F /* Special_Lower.hpp */,
+				AD03D2D01E1D824600916C6F /* Special_Sparse.hpp */,
+				AD03D2D11E1D824600916C6F /* Special_Symmetric.hpp */,
+				AD03D2D21E1D824600916C6F /* Special_Tridiag.hpp */,
+				AD03D2D31E1D824600916C6F /* Special_Upper.hpp */,
+			);
+			path = Special;
+			sourceTree = "<group>";
+		};
+		AD03D2D41E1D824600916C6F /* MatStorage */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2D51E1D824600916C6F /* ComplexFastStorage.hpp */,
+				AD03D2D61E1D824600916C6F /* ComplexMatStorage.hpp */,
+				AD03D2D71E1D824600916C6F /* FastStorage.hpp */,
+				AD03D2D81E1D824600916C6F /* FastStorage_Impl.hpp */,
+				AD03D2D91E1D824600916C6F /* MatStorage.hpp */,
+				AD03D2DA1E1D824600916C6F /* MatStorage_Impl.hpp */,
+				AD03D2DB1E1D824600916C6F /* MatStorage_Sparse.hpp */,
+			);
+			name = MatStorage;
+			path = ../../../../../MetaLA/src/MatStorage;
+			sourceTree = "<group>";
+		};
+		AD03D2DC1E1D824600916C6F /* Solvers */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D2DD1E1D824600916C6F /* ConjGrad.hpp */,
+				AD03D2DE1E1D824600916C6F /* DiagonalSolver.hpp */,
+				AD03D2DF1E1D824600916C6F /* LowerSolver.hpp */,
+				AD03D2E01E1D824600916C6F /* Solver.hpp */,
+				AD03D2E11E1D824600916C6F /* SymmetricSolver.hpp */,
+				AD03D2E21E1D824600916C6F /* TriDiagSolver.hpp */,
+				AD03D2E31E1D824600916C6F /* UpperSolver.hpp */,
+			);
+			name = Solvers;
+			path = ../../../../../MetaLA/src/Solvers;
+			sourceTree = "<group>";
+		};
+		AD36B6191E1DA8C30030A0CF /* complex */ = {
+			isa = PBXGroup;
+			children = (
+				AD36B61A1E1DA8C30030A0CF /* complex.hpp */,
+				AD36B61B1E1DA8C30030A0CF /* complex_impl.hpp */,
+			);
+			name = complex;
+			path = ../../../../../Numbers/src/complex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,13 +985,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD03D2221E143D4500916C6F /* sim_base_details.cpp in Sources */,
+				AD03D2AA1E1D804D00916C6F /* Particle.cpp in Sources */,
+				AD03D2891E1D6FE400916C6F /* NetMat.cpp in Sources */,
 				AD03D2521E144BB800916C6F /* collider_base.cpp in Sources */,
 				AD03D1C81E143CD900916C6F /* main.cpp in Sources */,
 				AD03D25B1E14552600916C6F /* thruster_configuration.cpp in Sources */,
 				AD03D2161E143D4500916C6F /* bogacki_shampine23.cpp in Sources */,
 				AD03D2261E143D4500916C6F /* FileWrap.cpp in Sources */,
+				AD03D2AB1E1D804D00916C6F /* RandomInit.cpp in Sources */,
+				AD03D2A91E1D804D00916C6F /* GSA_Particle.cpp in Sources */,
 				AD03D2241E143D4500916C6F /* sim_state.cpp in Sources */,
 				AD03D2271E143D4500916C6F /* Timer.cpp in Sources */,
+				AD03D2E41E1D824600916C6F /* MatHashes.cpp in Sources */,
 				AD03D21D1E143D4500916C6F /* discrete_model.cpp in Sources */,
 				AD03D21E1E143D4500916C6F /* dynamic_model.cpp in Sources */,
 				AD03D2171E143D4500916C6F /* butcher_integrator.cpp in Sources */,
@@ -648,9 +1006,12 @@
 				AD03D2391E143DC400916C6F /* parser.cpp in Sources */,
 				AD03D21B1E143D4500916C6F /* explicit_trapezoidal.cpp in Sources */,
 				AD03D24D1E144B4900916C6F /* bullet.cpp in Sources */,
+				AD03D2881E1D6FE400916C6F /* NetLayer.cpp in Sources */,
 				AD03D2191E143D4500916C6F /* cashkarp_rk45.cpp in Sources */,
 				AD03D2251E143D4500916C6F /* time_step.cpp in Sources */,
+				AD36B61E1E1DBB890030A0CF /* RL_StateAccumulator.cpp in Sources */,
 				AD03D26C1E145D5900916C6F /* fraction.cpp in Sources */,
+				AD03D2B21E1D819200916C6F /* get_control.cpp in Sources */,
 				AD03D2211E143D4500916C6F /* history_printer.cpp in Sources */,
 				AD03D2351E143D6B00916C6F /* MomentContributor.cpp in Sources */,
 				AD03D2551E144C2900916C6F /* BattleSimulation.cpp in Sources */,
@@ -659,13 +1020,17 @@
 				AD03D2761E1B85AB00916C6F /* ship_spektr.cpp in Sources */,
 				AD03D24A1E144B0800916C6F /* ship_base.cpp in Sources */,
 				AD03D2331E143D6B00916C6F /* EquationsOfMotionImpl.cpp in Sources */,
+				AD03D28A1E1D6FE400916C6F /* NeuralNet.cpp in Sources */,
 				AD03D2181E143D4500916C6F /* butcher_table.cpp in Sources */,
 				AD03D26D1E145D5900916C6F /* prng.cpp in Sources */,
 				AD03D2151E143D4500916C6F /* pendulum_sim.cpp in Sources */,
+				AD03D28B1E1D6FE400916C6F /* NeuralPrototypes.cpp in Sources */,
 				AD03D2581E14529500916C6F /* thruster.cpp in Sources */,
+				AD03D2871E1D6FE400916C6F /* NetFunctions.cpp in Sources */,
 				AD03D2201E143D4500916C6F /* model_list.cpp in Sources */,
 				AD03D21F1E143D4500916C6F /* model_state.cpp in Sources */,
 				AD03D2341E143D6B00916C6F /* ForceContributor.cpp in Sources */,
+				AD03D2861E1D6FE400916C6F /* NetFunc.cpp in Sources */,
 				AD03D25E1E145A6B00916C6F /* ship_massprops.cpp in Sources */,
 				AD03D2721E1B846800916C6F /* RL_ControllerSim.cpp in Sources */,
 			);
@@ -796,6 +1161,7 @@
 				AD03D1CD1E143CD900916C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
